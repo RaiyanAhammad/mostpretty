@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>See the World's Most Beautiful Person</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>See the World's Most Beautiful Person</h1>
+        <div id="step1">
+            <label for="name">Enter the full name:</label>
+            <input type="text" id="name" placeholder="Full Name">
+            <button onclick="checkName()">Submit</button>
+        </div>
+        <div id="step2" style="display: none;">
+            <button onclick="showCamera()">Tap to see the prettiest Human ever</button>
+        </div>
+        <div id="camera" style="display: none;">
+            <video id="video" width="320" height="240" autoplay></video>
+            <p id="beautifulText" style="display: none;">You are the most beautiful human on the planet ❤</p>
+            <button onclick="goHome()">Go to Home</button>
+        </div>
+        <p id="noEntry" style="display: none; color: red;">No entry</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
